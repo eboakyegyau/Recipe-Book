@@ -10,6 +10,7 @@ import { DealerCarListsComponent } from './dealer_components/dealer-car-lists/de
 import { DealerCarListComponent } from './dealer_components/dealer-car-list/dealer-car-list.component';
 import { CarListComponent } from './buyer_components/car-list/car-list.component';
 import { CarListsComponent } from './buyer_components/car-lists/car-lists.component';
+import { HeaderComponent } from './header/header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarListsComponent } from './buyer_components/car-lists/car-lists.compon
     DealerCarListsComponent,
     DealerCarListComponent,
     CarListComponent,
-    CarListsComponent
+    CarListsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
