@@ -12,7 +12,8 @@ import { CarListComponent } from './buyer_components/car-list/car-list.component
 import { CarListsComponent } from './buyer_components/car-lists/car-lists.component';
 import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ResetComponent } from './authentication/reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import { FormsModule } from '@angular/forms';
     CarListComponent,
     CarListsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ResetComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

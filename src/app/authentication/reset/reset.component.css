@@ -1,0 +1,13 @@
+#reset .form-control{
+    width:390px;
+}
+
+#reset .btn{
+    width:390px;
+}
+
+@media screen and (max-width:500px){
+    #reset{
+        width:300px;
+    }
+}

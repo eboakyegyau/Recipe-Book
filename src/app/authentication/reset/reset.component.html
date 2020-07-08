@@ -1,0 +1,17 @@
+<div id="reset" class="card justify-content-center align-items-center">
+
+    <form #resetForm ="ngForm" (ngSubmit)="onSubmit(resetForm)">
+
+        <div class="form-group">
+            <input id="email" placeholder="Email" type="text"  class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <button  class="btn btn-primary btn-block" type="submit" [disabled]= "!resetForm.valid">
+                Reset 
+            </button>
+        </div>
+
+    </form>
+
+</div>

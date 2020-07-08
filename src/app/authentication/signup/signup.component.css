@@ -1,0 +1,53 @@
+#register .facebook-btn{  background-color:#3C589C; }
+
+#register .google-btn{ background-color: #DF4B3B; }
+
+#register .social-btn{
+    font-weight: 100;
+    color:white;
+    width:190px;
+    font-size: 0.9rem;
+}
+
+#register .social-login{
+    width:390px;
+    margin:0 auto;
+    margin-bottom: 14px;
+}
+
+#register .social-btn{
+    width: 390px;
+}
+@media screen and (max-width:500px){
+    #register{
+        width:300px;
+    }
+    
+    #register  .social-login{
+        width:200px;
+        margin:0 auto;
+        margin-bottom: 10px;
+    }
+    #register  .social-btn{
+        font-size: 1.3rem;
+        font-weight: 100;
+        color:white;
+        width:200px;
+        height: 56px;
+        
+    }
+    #register .social-btn:nth-child(1){
+        margin-bottom: 5px;
+    }
+    #register .social-btn span{
+        display: none;
+    }
+    #register  .facebook-btn:after{
+        content:'Facebook';
+    }
+  
+    #register  .google-btn:after{
+        content:'Google+';
+    }
+    
+}
