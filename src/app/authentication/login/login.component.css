@@ -1,0 +1,50 @@
+#signInForm .facebook-btn{  background-color:#3C589C; }
+
+#signInForm .google-btn{ background-color: #DF4B3B; }
+
+#signInForm .social-btn{
+    font-weight: 100;
+    color:white;
+    width:190px;
+    font-size: 0.9rem;
+}
+
+#signInForm .social-login{
+    width:390px;
+    margin:0 auto;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width:500px){
+    #signInForm{
+        width:300px;
+    }
+    
+    #signInForm  .social-login{
+        width:200px;
+        margin:0 auto;
+        margin-bottom: 10px;
+    }
+    #signInForm  .social-btn{
+        font-size: 1.3rem;
+        font-weight: 100;
+        color:white;
+        width:200px;
+        height: 56px;
+        
+    }
+    #signInForm .social-btn:nth-child(1){
+        margin-bottom: 5px;
+    }
+    #signInForm .social-btn span{
+        display: none;
+    }
+    #signInForm  .facebook-btn:after{
+        content:'Facebook';
+    }
+  
+    #signInForm  .google-btn:after{
+        content:'Google+';
+    }
+    
+}
