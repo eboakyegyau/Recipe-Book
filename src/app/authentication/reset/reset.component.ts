@@ -13,6 +13,10 @@ export class ResetComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(f: NgForm){}
+  onSubmit(form: NgForm){
+
+    console.log(form.value);
+    form.reset();
+  }
 
 }

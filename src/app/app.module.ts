@@ -13,6 +13,7 @@ import { CarListsComponent } from './buyer_components/car-lists/car-lists.compon
 import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'
 import { ResetComponent } from './authentication/reset/reset.component';
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ResetComponent } from './authentication/reset/reset.component';
   imports: [
     BrowserModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
