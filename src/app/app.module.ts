@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { ResetComponent } from './authentication/reset/reset.component';
     BrowserModule,
     FormsModule,
     CommonModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
