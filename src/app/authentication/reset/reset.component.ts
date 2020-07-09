@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from './../../services/authentication.service';
+import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -6,16 +7,29 @@ import {NgForm} from '@angular/forms';
   templateUrl: './reset.component.html',
   styleUrls: ['./reset.component.css']
 })
-export class ResetComponent implements OnInit {
+export class ResetComponent {
 
-  constructor() { }
+  constructor(private authservice: AuthenticationService) { }
 
-  ngOnInit(): void {
-  }
+  onSubmit(form: NgForm) {
 
-  onSubmit(form: NgForm){
+    if(!form.valid) {
+        return;
+    }
 
-    console.log(form.value);
+    const email = form.value.email;
+    const password = form.value.password;
+
+    this.authservice.reset( email).subscribe( resData => {
+      console.log(resData);
+    },
+
+      error => {
+        console.log(error);
+      }
+
+    );
+
     form.reset();
   }
 

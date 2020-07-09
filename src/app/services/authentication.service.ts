@@ -39,4 +39,13 @@ export class AuthenticationService {
       } 
     );
  }
+
+ reset(email: string){
+  return this.http.post<AuthResponseData>( 'https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyCL35A3O2RZhhJd3Mta_pvN3mymRjbNJnM', 
+    {
+       email: email,
+       requestType: "PASSWORD_RESET"
+    } 
+  );
+}
 }
