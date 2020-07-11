@@ -19,6 +19,7 @@ export class SignupComponent {
 
     const email = form.value.email;
     const password = form.value.password;
+    const displayName = form.value.fullname;
 
     this.authservice.signUp( email, password).subscribe( resData => {
       console.log(resData);
