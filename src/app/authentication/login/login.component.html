@@ -1,7 +1,10 @@
 
 <div id="signInForm" class="card justify-content-center align-items-center">
+    <div *ngIf = "isLoading">
+        <app-loading-spinner></app-loading-spinner>
+    </div>
 
-        <form #loginForm ="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <form #loginForm ="ngForm" (ngSubmit)="onSubmit(loginForm)" *ngIf = "!isLoading">
 
             <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
 

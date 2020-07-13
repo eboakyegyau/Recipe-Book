@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'
 import { ResetComponent } from './authentication/reset/reset.component';
+import { LoadingSpinnerComponent } from './authentication/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ResetComponent } from './authentication/reset/reset.component';
     CarListsComponent,
     HeaderComponent,
     FooterComponent,
-    ResetComponent
+    ResetComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
