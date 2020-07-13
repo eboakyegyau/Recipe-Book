@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  images = ['assets/images/2a338988f1af4e1d98d94af873bc711b.jpg',
+  'assets/images/download.jpeg',
+  'assets/images/VauxhallCorsa@1.5x.png',
+  'assets/images/2a338988f1af4e1d98d94af873bc711b.jpg',
+  'assets/images/download.jpeg',
+  'assets/images/VauxhallCorsa@1.5x.png',
+  'assets/images/2a338988f1af4e1d98d94af873bc711b.jpg',
+  'assets/images/download.jpeg',
+  'assets/images/VauxhallCorsa@1.5x.png',
+  'assets/images/2a338988f1af4e1d98d94af873bc711b.jpg',
+  'assets/images/download.jpeg',
+  'assets/images/VauxhallCorsa@1.5x.png'
+]
+
   constructor() { }
 
   ngOnInit(): void {
