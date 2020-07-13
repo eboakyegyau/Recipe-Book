@@ -7,8 +7,9 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="#">Search</a>
         <a class="nav-item nav-link" href="#">Deals</a>
-        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/login">LogIn</a>
-        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/signup">SignUp</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/login" *ngIf = "!isAuthenticated">LogIn</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/signup" *ngIf = "!isAuthenticated">SignUp</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/login" *ngIf = "isAuthenticated">LogOut</a>
         <a class="nav-item nav-link" href="#">Contact</a>
       </div>
     </div>
