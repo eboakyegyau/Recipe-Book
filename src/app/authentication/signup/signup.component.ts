@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
 })
 export class SignupComponent {
 
+  isLoading = false;
+
   constructor(private authservice: AuthenticationService) { }
 
   onSubmit(form: NgForm) {
@@ -17,16 +19,19 @@ export class SignupComponent {
         return;
     }
 
+    this.isLoading = true;
     const email = form.value.email;
     const password = form.value.password;
     const displayName = form.value.fullname;
 
     this.authservice.signUp( email, password).subscribe( resData => {
       console.log(resData);
+      this.isLoading = false;
     },
 
       error => {
         console.log(error);
+        this.isLoading = false;
       }
 
     );
