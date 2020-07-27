@@ -60,7 +60,7 @@ import { LoadingSpinnerComponent } from './authentication/loading-spinner/loadin
         {
           id: FacebookLoginProvider.PROVIDER_ID,
           provider: new FacebookLoginProvider(
-            'bfe4b0b76b1f7632ffc0b4a9d4d40fb8'),
+            '333670734459545'),
         },
       ],
     } as SocialAuthServiceConfig,
