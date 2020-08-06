@@ -1,3 +1,5 @@
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { RecipesModule } from './recipes/recipe.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,8 +18,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'
 import { ResetComponent } from './authentication/reset/reset.component';
 import { LoadingSpinnerComponent } from './authentication/loading-spinner/loading-spinner.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { RecipeBookComponent } from './recipe-book/recipe-book.component';
     FooterComponent,
     ResetComponent,
     LoadingSpinnerComponent,
-    ShoppingListComponent,
-    RecipeBookComponent
+
   ],
   imports: [
     BrowserModule,
@@ -40,7 +39,9 @@ import { RecipeBookComponent } from './recipe-book/recipe-book.component';
     ValidateEqualModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecipesModule,
+    ShoppingListModule,
   ],
   providers: [{
     provide: 'SocialAuthServiceConfig',
