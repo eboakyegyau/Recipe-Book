@@ -6,7 +6,14 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
 
 
 @NgModule({
-  declarations: [ShoppingListComponent, ShoppingListEditComponent],
+  declarations: [
+    ShoppingListComponent, 
+    ShoppingListEditComponent
+  ],
+  exports: [
+    ShoppingListComponent, 
+    ShoppingListEditComponent
+  ],
   imports: [
     CommonModule
   ]

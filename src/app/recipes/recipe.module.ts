@@ -7,7 +7,16 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 
 @NgModule({
-  declarations: [RecipeListComponent, RecipeItemComponent, RecipeDetailComponent],
+  declarations: [
+    RecipeListComponent, 
+    RecipeItemComponent, 
+    RecipeDetailComponent
+  ],
+  exports: [
+    RecipeListComponent, 
+    RecipeItemComponent, 
+    RecipeDetailComponent
+  ],
   imports: [
     CommonModule
   ]
