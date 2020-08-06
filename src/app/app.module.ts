@@ -16,6 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'
 import { ResetComponent } from './authentication/reset/reset.component';
 import { LoadingSpinnerComponent } from './authentication/loading-spinner/loading-spinner.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { LoadingSpinnerComponent } from './authentication/loading-spinner/loadin
     HeaderComponent,
     FooterComponent,
     ResetComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    ShoppingListComponent,
+    RecipeBookComponent
   ],
   imports: [
     BrowserModule,
